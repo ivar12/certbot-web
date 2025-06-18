@@ -1,10 +1,11 @@
 ---
 networks:
   frontend:
-    name: frontend
+    name: Your-network
 services:
   certbot-web:
-    build: .
+    image: ghcr.io/ivar12/certbot-web:latest
+    container_name: certbot-webUI
     ports:
       - 8086:8080
     volumes:
@@ -17,7 +18,7 @@ services:
     environment:
       - TZ=CEST
     networks:
-      - frontend
+      - Your-network
     restart: unless-stopped
 
 volumes:
