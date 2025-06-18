@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Secrets
+secrets/
+cloudflare.ini
+
+# Let’s Encrypt certs
+public-certs/
+public/
+*.pem
+*.key
+
+# Docker
+*.log
+.env
