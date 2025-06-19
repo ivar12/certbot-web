@@ -10,6 +10,6 @@ A simple CherryPy + Bootstrap 5 web interface for issuing and renewing Let's Enc
 - Certificate export to `/public-certs`
 
 ## Quick Start
-
+Enter your cloudflare token in ./secrets/cloudflare.ini
 ```bash
-docker-compose up 
+docker-compose up -d
