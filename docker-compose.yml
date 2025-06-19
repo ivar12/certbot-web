@@ -4,7 +4,7 @@ networks:
     name: Your-Network
 services:
   certbot-web:
-    image: ghcr.io/ivar12/certbot-web:latest
+    image: ghcr.io/ivar12/certbot-web/certbot-web:latest
     container_name: certbot-webUI
     ports:
       - 8086:8080
