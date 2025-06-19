@@ -27,7 +27,7 @@ class CertbotWeb:
             "--dns-cloudflare",
             "--dns-cloudflare-credentials", "/secrets/cloudflare.ini",
             "--non-interactive", "--agree-tos",
-            "--email", "ivar@networktechlab.nl",
+            "--email", "email@email.com",
             "-d", domain
         ]
         try:
