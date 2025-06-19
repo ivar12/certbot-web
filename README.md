@@ -11,5 +11,6 @@ A simple CherryPy + Bootstrap 5 web interface for issuing and renewing Let's Enc
 
 ## Quick Start
 Enter your cloudflare token in ./secrets/cloudflare.ini
+You can create the folder and the file within the project directory
 ```bash
 docker-compose up -d
