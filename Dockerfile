@@ -10,8 +10,8 @@ COPY certbot_web.py .
 COPY templates/ ./templates
 
 RUN mkdir ./static
-RUN mkdir ./secrets
-RUN echo "dns_cloudflare_api_token = YOUR_CLOUDFLARE_TOKEN" > ./secrets/cloudflare.ini
+RUN mkdir -p ./secrets && \
+    echo "dns_cloudflare_api_token = your_token_here" > /secrets/cloudflare.ini
 
 RUN pip install cherrypy jinja2
 
